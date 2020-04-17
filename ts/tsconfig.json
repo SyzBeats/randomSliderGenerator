@@ -2,6 +2,7 @@
   "compilerOptions": {
     "noImplicitAny": true,
     "sourceMap": false,
+    "lib": ["es6", "DOM", "es2017"],
     "target": "ES6",
     "outDir": "../js/"
   },
