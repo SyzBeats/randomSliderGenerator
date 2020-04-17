@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "sourceMap": false,
+    "target": "ES6",
+    "outDir": "../js/"
+  },
+  "include": ["*"]
+}
