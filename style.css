@@ -1,14 +1,760 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-}
+/*
+Theme Name: Enfold Child
+Description: A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Enfold Wordpress Theme. If you plan to do a lot of file modifications we recommend to use this Theme instead of the original Theme. Updating wil be much easier then.
+Version: 1.0
+Author: Kriesi
+Author URI: http://www.kriesi.at
+Template: enfold
+*/
+
+/* 
+* rot:  alt #d3424c  213, 63, 75 -  neu #d53f4b
+* blau  #277a9d 39, 122, 157
+*/
 
 body {
-  width: 100vw;
-  overflow-x: hidden;
+  font-size: 16px;
 }
+
+p {
+  font-size: 1.15em;
+  line-height: 1.6em;
+}
+
+.main_color p {
+  color: #333333;
+}
+
+ul li {
+  font-size: 1em;
+  line-height: 1.8em;
+}
+
+a {
+  text-decoration: none;
+  color: #277a9d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #222;
+}
+
+p.element.style {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ls-bg {
+  -webkit-filter: brightness(0%);
+  filter: brightness(0%);
+} /* Headbild Filter */
+
+.template-page .entry-content-wrapper h2 {
+  text-transform: none;
+}
+
+.red-header {
+  background-color: #d53f4b;
+  color: #fff;
+  padding: 0.5em;
+  font-size: 1.25em;
+}
+
+.blue-highlight {
+  background-color: #94eaff;
+  padding: 2px 0 2px 0;
+}
+
+.search-optimize {
+  margin-top: -200px;
+  z-index: 999;
+}
+
+/* Typography */
+
+h1 {
+  text-transform: uppercase;
+  color: #d53f4b;
+  font-size: 2em;
+  text-align: left;
+}
+
+#top #wrap_all .all_colors h1 {
+  font-size: 2em;
+}
+
+h1 {
+  margin: 1em 0;
+}
+
+h2 {
+  padding-top: 20px !important;
+  text-align: left;
+  margin-bottom: 0px; /* 20px */
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+h2:after {
+  content: " ";
+  display: block;
+  width: 70px;
+  height: 2px;
+  margin-top: 10px;
+  margin-right: auto;
+  /*margin-left: auto; */
+  background-color: #d53f4b;
+  border-radius: 3px;
+}
+
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+  margin-top: 0; /* 1.5em */
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+h4 a:hover {
+  text-decoration: none !important;
+}
+
+#headline--main h1 {
+  text-align: center;
+  font-size: calc(2rem + 1vw) !important;
+  font-family: "Ubuntu" !important;
+}
+
+.text--center h1,
+.text--center h2,
+.text--center h3,
+.text--center h4,
+.text--center h5 {
+  text-align: center;
+}
+
+.h2--normal h2::after {
+  display: none;
+}
+
+.logo {
+  width: 100%;
+}
+
+.h2--normal h2 {
+  text-align: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
+.h3--normal h3::after {
+  display: none;
+}
+
+.h3--normal h3 {
+  text-align: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.h4--normal h4::after {
+  display: none;
+}
+
+.h4--normal h4 {
+  text-align: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.h5--normal h5::after {
+  display: none;
+}
+
+.h5--normal h5 {
+  text-align: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/*End Typography*/
+
+.content,
+.sidebar {
+  padding-top: 0 !important;
+}
+
+/* Sections */
+/*#av_section_1, #av_section_2 {  Logoband Sektion 
+margin-top: 20px;
+}
+*/
+
+/* Breadcrumb */
+.title_container .breadcrumb {
+  left: 50px;
+}
+
+/* Abstand */
+.space-top {
+  margin-top: 30px;
+}
+.space-bottom {
+  margin-bottom: 30px;
+}
+/* Sticky Element */
+
+#ssb-container {
+  background-color: #999;
+}
+.fa-envelope::before {
+  color: #fff;
+}
+
+/* Suche */
+.av_searchform_wrapper {
+  border-width: 0px !important;
+}
+.ajax_search_response {
+  background-color: #fff;
+}
+.av_searchform_element_results {
+  margin-top: 0px !important;
+}
+
+/* Proofen Expert */
+.pewl {
+  border-radius: 3px;
+}
+/* Telefon oben rechts */
+.phone-info {
+  font-size: 1em;
+}
+
+/* Allgemein */
+
+.container_wrap {
+  border-top-style: none;
+  border-top-width: 0px;
+}
+
+/* Mega Menu */
+
+#top #header .avia_mega_div > .sub-menu {
+  padding: 10px 20px 20px;
+}
+#top #header .avia_mega_div > .sub-menu.avia_mega_hr {
+  padding-top: 10px;
+}
+
+#top #header .mega_menu_title a:hover {
+  text-decoration: none;
+}
+
+#header .avia_mega_div .units {
+  border-right-width: 3px;
+}
+
+#top #header .avia_mega_div > .sub-menu > li > ul > li a {
+  /* Anpassen der Abstände für mehr Platz für Einträge */
+  padding: 4px 12px 3px 12px;
+  line-height: 15px;
+}
+
+/* Blog */
+.av-share-box {
+  display: none;
+}
+
+/* Social Bookmarks */
+#top .social_bookmarks li a {
+  text-decoration: none;
+}
+
+/* Gallery */
+#top div .avia-gallery img {
+  border-style: none;
+  padding: 0;
+  border-radius: 0;
+}
+#top div .avia-gallery {
+  padding-bottom: 0px;
+  padding: 20px 0 20px 0;
+}
+.avia-gallery-thumb a {
+  width: 20px;
+}
+
+/* Button */
+
+.cta-button--red span,
+.cta-button span {
+  color: #f2f2f2 !important;
+  letter-spacing: 1px;
+}
+
+.button--white span.elementor-button-text {
+  color: #f6f8fa;
+}
+
+.button--teal span.elementor-button-text {
+  color: #1e7398;
+}
+
+.avia-button.avia-size-medium {
+  /* Medium sizesd Shortcode Button */
+  padding: 15px 40px;
+  border: none;
+  min-width: 90px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff !important;
+  background-color: #d53f4b !important;
+}
+
+/* Spalten */
+body .column-top-margin {
+  margin-top: 20px;
+}
+
+/* Logo Band H'f6hen Fix */
+
+.content {
+  padding-bottom: 0;
+}
+
+/* Sticky Element */
+
+#ssb-container a {
+  color: #ffffff !important;
+}
+
+#ssb-container {
+  background-color: transparent;
+}
+#ssb-btn-2 {
+  border-top-left-radius: 3px;
+}
+
+#ssb-btn-1 {
+  border-bottom-left-radius: 3px;
+}
+
+/* Akkorderon */
+.togglecontainer .single_toggle:first-child .toggler,
+.togglecontainer .taglist + .single_toggle .toggler {
+  border-radius: 3px;
+}
+.toggle_icon {
+  border-width: 0 !important;
+}
+.toggle_icon span {
+  border-color: #277a9d;
+}
+.toggle_content {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.farb-sektion-abstand {
+  padding-bottom: 30px;
+}
+
+.js_active .toggler {
+  color: #333 !important;
+}
+
+/* Text Highlight */
+.text-highlight {
+  background-color: rgba(211, 66, 76, 0.2);
+  color: #222;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+/* Hotspot Bild Highlight */
+.hotspot-highlight {
+  border: 3px solid #d53f4b !important;
+  border-radius: 3px;
+}
+
+/* Animierte Icons */
+.avia_start_animation a {
+  text-decoration: none;
+}
+
+/* Footer */
+
+#footer p {
+  font-size: 0.9em;
+}
+
+#footer,
+#footer .textwidget a {
+  font-size: 1em !important;
+}
+
+#footer h3:after {
+  content: " ";
+  display: block;
+  width: 70px;
+  height: 2px;
+  margin-top: 10px;
+  margin-right: auto;
+  background-color: #d53f4b;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.footer_color,
+.footer_color b {
+  color: #ddd;
+}
+
+.footer_color a {
+  text-decoration: none;
+
+  color: #277a9d;
+}
+
+.footer_color a:hover {
+  color: #ffffff !important;
+}
+.news-time,
+.news-thumb {
+  display: none;
+} /* Anzeige Vorschaubild + Datum im Footer ausgeblendet */
+
+/* Footer Ende */
+
+.text-white {
+  color: #ffffff;
+}
+.text-black {
+  color: #000000;
+}
+
+.avia-image-container avia-image-container-inner,
+.avia-image-container avia-image-container-inner img {
+  width: 100%;
+}
+
+.avia-icon-list-container {
+  margin: 30px 0 !important;
+}
+
+/* Blog */
+#top .fullsize .template-blog .post-meta-infos {
+  display: none;
+}
+
+#top .fullsize .template-blog .post-title {
+  text-align: left;
+}
+
+/* Blog Ende */
+
+/*
+Desktop Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the desktop view of your site */
+
+@media only screen and (min-width: 768px) {
+  /* Add your Desktop Styles here */
+}
+
+/*
+Mobile Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the Mobile and Tablet Portrait view */
+
+@media only screen and (max-width: 767px) {
+  /* Add your Mobile Styles here */
+}
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
+}
+
+/*Elementor styles*/
+
+.elementor-container h2.elementor-heading-title.elementor-size-default {
+  font-style: normal !important;
+}
+
+/*End Elementor Styles*/
+
+/*Begin BLOG*/
+header.entry-content-header {
+  margin-top: 2rem;
+}
+
+.entry-content h3.slide-entry-title.entry-title a {
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  /* word-break: break-all; */
+}
+
+#top #wrap_all .all_colors h1 {
+  font-size: 1.5rem !important;
+}
+
+/*KL Modal*/
+:root {
+  --color-main: #a82c31;
+}
+
+@-webkit-keyframes kl-cardIn {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes kl-cardIn {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.kl-modalContainer {
+  z-index: 100;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  -webkit-animation: kl-cardIn 0.5s ease forwards;
+  animation: kl-cardIn 0.5s ease forwards;
+  display: inline;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  display: none;
+}
+
+.kl-modalContainer--open {
+  display: block;
+}
+
+.kl-modal {
+  z-index: 100;
+  border-top: 8px solid darkred;
+  background: var(--color-main);
+  width: 20vw;
+  max-width: 90vw;
+  min-width: 20rem;
+  min-height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-shadow: 1px 3px 5px #3338, -1px 2px 5px #3339;
+  box-shadow: 1px 3px 5px #3338, -1px 2px 5px #3339;
+  border-radius: 3px;
+  font-size: 1.25rem;
+  color: #f8f8f8;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.kl-modal:hover {
+  -webkit-box-shadow: 3px 4px 7px #3338, 16px 12px 31px #3339;
+  box-shadow: 3px 4px 7px #3338, 16px 12px 31px #3339;
+  -webkit-transform: rotate3d(5, -5, -2, 7deg);
+  transform: rotate3d(5, -5, -2, 7deg);
+}
+
+.kl-modal_close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  top: 0.25rem;
+  height: 1.5rem;
+  right: 0.75rem;
+  font-size: 2.5rem;
+  padding: 0rem 0.4rem;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  z-index: 10;
+}
+
+.kl-modal_close:hover {
+  cursor: pointer;
+}
+
+.kl-modal_icon {
+  margin: 0.25rem 1rem;
+}
+
+.kl-modal_text {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+.kl-modal_title {
+  font-size: 1.1rem;
+}
+.kl-modal_link {
+  color: #eee;
+  text-decoration: none;
+  position: relative;
+}
+
+.kl-modal_link::after {
+  -webkit-transform: scale3d(0, 0, 0);
+  transform: scale3d(0, 0, 0);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #f2f2f2;
+  content: "";
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.kl-modal_link:hover::after {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.kl-modal_logo {
+  width: 10rem;
+  margin: 0.5rem 0;
+  filter: brightness(6);
+}
+
+.kl-modal_header {
+  -webkit-transform: translateY(-0.5rem);
+  transform: translateY(-0.5rem);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f288;
+  padding: 1rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.kl-modal_body {
+  padding: 1rem;
+  -webkit-box-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f288;
+}
+
+.kl-modal_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 1rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.kl-modal_hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/*IMAGE RANDOM SLIDER*/
 
 @-webkit-keyframes animateSlide {
   from {
@@ -29,7 +775,7 @@ body {
 }
 
 .random-slider {
-  height: 50vh;
+  height: 65vh;
   position: relative;
 }
 
@@ -50,16 +796,33 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.random-slider_button {
+  background: #d3424c;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 1.5rem 0;
+  text-decoration: none;
+}
+
+.random-slider_button:hover {
+  cursor: pointer;
 }
 
 .random-slider_item {
@@ -78,17 +841,16 @@ body {
 .random-slider_item[data-type="shown"] {
   z-index: 1;
   -webkit-transform: translate3d(0vw, 0, 0);
-          transform: translate3d(0vw, 0, 0);
+  transform: translate3d(0vw, 0, 0);
 }
 
 .random-slider_item[data-type="hidden"] {
   -webkit-transform: translate3d(-100vw, 0, 0);
-          transform: translate3d(-100vw, 0, 0);
+  transform: translate3d(-100vw, 0, 0);
 }
 
 .random-slider_item[data-type="next"] {
   -webkit-transform: translate3d(100vw, 0, 0);
-          transform: translate3d(100vw, 0, 0);
+  transform: translate3d(100vw, 0, 0);
   z-index: -1;
 }
-/*# sourceMappingURL=style.css.map */

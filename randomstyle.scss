@@ -9,6 +9,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
+
 @keyframes animateSlide {
   from {
     opacity: 0.7;
@@ -19,7 +20,7 @@ body {
 }
 
 .random-slider {
-  height: 50vh;
+  height: 65vh;
   position: relative;
   &_container {
     height: 100%;
@@ -39,6 +40,21 @@ body {
     align-items: center;
     color: white;
     flex-direction: column;
+  }
+  &_button {
+    background: #d3424c;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 1.5rem 0;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &_item {
     height: 100%;
