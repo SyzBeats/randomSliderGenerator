@@ -8,21 +8,21 @@ document.addEventListener("DOMContentLoaded", function () {
     #currentSlide: number = 0;
 
     #imageURLs: string[] = [
-      "https://source.unsplash.com/1600x900/?nature,water",
-      "https://source.unsplash.com/1600x900/?holiday",
-      "https://source.unsplash.com/1600x900/?airplane",
-      "https://source.unsplash.com/1600x900/?air",
-      "https://source.unsplash.com/1600x900/?clouds",
-      "https://source.unsplash.com/1600x900/?pilot",
-      "https://source.unsplash.com/1600x900/?flying",
-      "https://source.unsplash.com/1600x900/?jet",
-      "https://source.unsplash.com/1600x900/?airplane",
-      "https://source.unsplash.com/1600x900/?jets",
-      "https://source.unsplash.com/1600x900/?boeing",
-      "https://source.unsplash.com/1600x900/?airport",
-      "https://source.unsplash.com/1600x900/?insurance",
-      "https://source.unsplash.com/1600x900/?emotional",
-      "https://source.unsplash.com/1600x900/?nature",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-motorflugzeug-d-mz-pixabay.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-motorflugzeug-chrombomber-pixabay.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-landebahn-thomas-ehrhardt-pixabay.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-helikopter-mauro-paillex-unsplash.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-flugzeug-hangar-billy-huynh-unsplash.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-cockpit-flugzeug-peter-h-pixabay-tiny.jpg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-cockpit.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-cessna.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-breisgauverein.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-ballon-s-s-unsplash.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-team-meeting.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-team-hangar.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-team-cessna2.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-team-cessna.jpeg",
+      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-segelflugzeug.jpeg",
     ];
 
     //aray of 4 images
