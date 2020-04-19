@@ -35,6 +35,11 @@ body {
   padding: 0;
 }
 
+.random-slider_title {
+  color: white !important;
+  text-align: center;
+}
+
 .random-slider_container {
   height: 100%;
   position: relative;
@@ -57,7 +62,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: white !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -70,7 +75,7 @@ body {
   text-transform: uppercase;
   border: none;
   border-radius: 2rem;
-  color: white;
+  color: white !important;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 1.5rem 0;
@@ -89,7 +94,7 @@ body {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }

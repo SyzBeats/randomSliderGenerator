@@ -24,6 +24,10 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
+  &_title {
+    color: white !important;
+    text-align: center;
+  }
   &_container {
     height: 100%;
     position: relative;
@@ -40,7 +44,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: white !important;
     flex-direction: column;
   }
   &_button {
@@ -49,7 +53,7 @@ body {
     text-transform: uppercase;
     border: none;
     border-radius: 2rem;
-    color: white;
+    color: white !important;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 1.5rem 0;
@@ -66,7 +70,7 @@ body {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     transition: all 1s ease;
     &[data-type="shown"] {
       z-index: 1;
