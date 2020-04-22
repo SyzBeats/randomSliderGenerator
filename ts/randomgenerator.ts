@@ -33,12 +33,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
     constructor() {
       this.#currentSlide = 1;
+
       this.setImages();
       this.setURLs();
       this.setBackgroundImages();
       this.setCurrentSlide();
     }
 
+    private evalCurrentURL(): void {
+      // checks current URL
+      let url = location.href;
+      switch (true) {
+        case url.includes("halterhaftpflicht"): {
+          return;
+        }
+        case url.includes("passagier"): {
+          return;
+        }
+        case url.includes("csl"): {
+          return;
+        }
+        case url.includes("kasko"): {
+          return;
+        }
+        case url.includes("hangar"): {
+          return;
+        }
+        case url.includes("sitzplatz"): {
+          return;
+        }
+        case url.includes("kriegs-haftpflicht"): {
+          return;
+        }
+        case url.includes("kriegs-kasko"): {
+          return;
+        }
+      }
+    }
     // method to select the random images
     private setImages() {
       for (let i = 0; i < this.#imageURLs.length; i++) {

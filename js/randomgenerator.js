@@ -46,6 +46,44 @@ document.addEventListener("DOMContentLoaded", function () {
             this.setBackgroundImages();
             this.setCurrentSlide();
         }
+        evalCurrentURL() {
+            // checks current URL
+            let url = location.href;
+            switch (true) {
+                case url.includes("halterhaftpflicht"): {
+                    console.log("lorem ipsum");
+                    return;
+                }
+                case url.includes("passagier"): {
+                    console.log("lorem ipsum");
+                    return;
+                }
+                case url.includes("csl"): {
+                    console.log("lorem ipsum");
+                    return;
+                }
+                case url.includes("kasko"): {
+                    console.log("lorem ipsum");
+                    return;
+                }
+                case url.includes("hangar"): {
+                    console.log("lorem ipsum");
+                    return;
+                }
+                case url.includes("sitzplatz"): {
+                    console.log("lorem ipsum");
+                    return;
+                }
+                case url.includes("kriegs-haftpflicht"): {
+                    console.log("lorem ipsum");
+                    return;
+                }
+                case url.includes("kriegs-kasko"): {
+                    console.log("lorem ipsum");
+                    return;
+                }
+            }
+        }
         // method to select the random images
         setImages() {
             for (let i = 0; i < __classPrivateFieldGet(this, _imageURLs).length; i++) {
