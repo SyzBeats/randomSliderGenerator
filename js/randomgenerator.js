@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 let index = Math.floor(Math.random() * 15);
                 if (!__classPrivateFieldGet(this, _images).includes(index) && __classPrivateFieldGet(this, _images).length < 4) {
                     __classPrivateFieldGet(this, _images).push(index);
-                    console.log(__classPrivateFieldGet(this, _images));
                 }
             }
             if (__classPrivateFieldGet(this, _images).length < 4) {

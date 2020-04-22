@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         let index = Math.floor(Math.random() * 15);
         if (!this.#images.includes(index) && this.#images.length < 4) {
           this.#images.push(index);
-          console.log(this.#images);
         }
       }
       if (this.#images.length < 4) {
@@ -84,10 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       this.setCurrentSlide();
     }
-
-    // change Slide Method
-
-    //method to set bg if items
   }
 
   const generator = new RandomImageGenerator();
