@@ -5,24 +5,25 @@ document.addEventListener("DOMContentLoaded", function () {
   const sliderItems = document.querySelectorAll<HTMLDivElement>(".random-slider_item");
 
   class RandomImageGenerator {
+    #baseUrl: string = "http://dev.luftfahrtversicherung24.de";
     #currentSlide: number = 0;
 
     #imageURLs: string[] = [
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-motorflugzeug-d-mz-pixabay.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-motorflugzeug-chrombomber-pixabay.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-landebahn-thomas-ehrhardt-pixabay.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-helikopter-mauro-paillex-unsplash.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-flugzeug-hangar-billy-huynh-unsplash.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-cockpit-flugzeug-peter-h-pixabay-tiny.jpg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-cockpit.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-cessna.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-breisgauverein.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-ballon-s-s-unsplash.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-team-meeting.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-team-hangar.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-team-cessna2.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-team-cessna.jpeg",
-      "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-segelflugzeug.jpeg",
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-motorflugzeug-d-mz-pixabay.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-motorflugzeug-chrombomber-pixabay.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-landebahn-thomas-ehrhardt-pixabay.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-helikopter-mauro-paillex-unsplash.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-flugzeug-hangar-billy-huynh-unsplash.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-cockpit-flugzeug-peter-h-pixabay-tiny.jpg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-cockpit.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-cessna.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-breisgauverein.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-ballon-s-s-unsplash.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-team-meeting.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-team-hangar.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-team-cessna2.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-team-cessna.jpeg`,
+      `${this.#baseUrl}/wp-content/uploads/2020/04/start-slider-segelflugzeug.jpeg`,
     ];
 
     //aray of 4 images

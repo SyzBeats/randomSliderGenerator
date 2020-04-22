@@ -14,27 +14,28 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 };
 // get all containers
 document.addEventListener("DOMContentLoaded", function () {
-    var _currentSlide, _imageURLs, _images;
+    var _baseUrl, _currentSlide, _imageURLs, _images;
     const sliderItems = document.querySelectorAll(".random-slider_item");
     class RandomImageGenerator {
         constructor() {
+            _baseUrl.set(this, "http://dev.luftfahrtversicherung24.de");
             _currentSlide.set(this, 0);
             _imageURLs.set(this, [
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-motorflugzeug-d-mz-pixabay.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-motorflugzeug-chrombomber-pixabay.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-landebahn-thomas-ehrhardt-pixabay.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-helikopter-mauro-paillex-unsplash.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-flugzeug-hangar-billy-huynh-unsplash.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-cockpit-flugzeug-peter-h-pixabay-tiny.jpg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-cockpit.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-cessna.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-breisgauverein.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-ballon-s-s-unsplash.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-team-meeting.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-team-hangar.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-team-cessna2.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-team-cessna.jpeg",
-                "http://dev.luftfahrtversicherung24.de/wp-content/uploads/2020/04/start-slider-segelflugzeug.jpeg",
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-motorflugzeug-d-mz-pixabay.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-motorflugzeug-chrombomber-pixabay.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-landebahn-thomas-ehrhardt-pixabay.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-helikopter-mauro-paillex-unsplash.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-flugzeug-hangar-billy-huynh-unsplash.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-cockpit-flugzeug-peter-h-pixabay-tiny.jpg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-cockpit.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-cessna.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-breisgauverein.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-ballon-s-s-unsplash.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-team-meeting.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-team-hangar.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-team-cessna2.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-team-cessna.jpeg`,
+                `${__classPrivateFieldGet(this, _baseUrl)}/wp-content/uploads/2020/04/start-slider-segelflugzeug.jpeg`,
             ]);
             //aray of 4 images
             _images.set(this, []);
@@ -90,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
             this.setCurrentSlide();
         }
     }
-    _currentSlide = new WeakMap(), _imageURLs = new WeakMap(), _images = new WeakMap();
+    _baseUrl = new WeakMap(), _currentSlide = new WeakMap(), _imageURLs = new WeakMap(), _images = new WeakMap();
     const generator = new RandomImageGenerator();
     let slideInterval = () => setInterval(() => generator.nextSlide(), 5000);
     slideInterval();
